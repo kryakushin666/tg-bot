@@ -34,7 +34,7 @@ def welcome(message):
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     item2 = types.KeyboardButton("🎲 Продукт")
 
-    markup.add(item1, item2, item3)
+    markup.add(item2)
 
     bot.send_message(message.chat.id,
                      "Добро пожаловать, {0.first_name}!\nЯ - <b>{1.first_name}</b>, бот, который поможет тебе разобраться с работой..".format(
